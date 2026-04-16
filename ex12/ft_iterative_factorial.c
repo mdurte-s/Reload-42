@@ -6,7 +6,7 @@
 /*   By: mdurte-s <mdurte-s@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 09:30:29 by mdurte-s          #+#    #+#             */
-/*   Updated: 2026/04/14 09:30:33 by mdurte-s         ###   ########.fr       */
+/*   Updated: 2026/04/16 12:21:08 by mdurte-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_iterative_factorial(int nb)
 {
 	int	f;
 
-	if (nb < 0)
+	if (nb < 0 || 12 < nb)
 		return (0);
 	f = 1;
 	while (1 < nb)

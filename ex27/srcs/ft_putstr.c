@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdurte-s <mdurte-s@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/16 09:43:37 by mdurte-s          #+#    #+#             */
+/*   Updated: 2026/04/16 09:43:40 by mdurte-s         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(char *str, int output)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		ft_putchar(str[i]);
+		ft_putchar(str[i], output);
 		i++;
 	}
 }
